@@ -5,7 +5,7 @@ This function answers a need I have had multiple times, where I want to replicat
 
 This AWS Lambda function can be used to propagate incoming messages from Amazon Kinesis Streams or Amazon DynamoDB Streams to other services ([Amazon SNS](https://aws.amazon.com/sns/), [Amazon SQS](https://aws.amazon.com/sqs/), [Amazon Elasticsearch Service](https://aws.amazon.com/elasticsearch-service/), [Amazon Kinesis Streams](https://aws.amazon.com/kinesis/streams/), [Amazon Kinesis Firehose](https://aws.amazon.com/kinesis/firehose/), [AWS IoT](https://aws.amazon.com/iot/), [AWS Lambda](https://aws.amazon.com/lambda/), [Amazon ElastiCache for Memcached and Redis](https://aws.amazon.com/elasticache/)), regions or accounts. This function generates metrics that will be published to Amazon CloudWatch Metrics, in the `Custom/FanOut` namespace.
 
-![Architecture](architecture.png)
+![Architecture](https://github.com/aws-samples/aws-lambda-fanout/blob/master/architecture.png)
 
 This function can be run in the 'public' AWS Lambda mode (and should be the default for most services), or inside an Amazon Virtual Private Cloud (VPC) if you use Amazon ElastiCache (Redis or memcached).
 
